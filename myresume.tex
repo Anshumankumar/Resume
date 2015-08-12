@@ -1,0 +1,193 @@
+\documentclass{article}
+\usepackage[margin = 0.75in]{geometry}
+\usepackage{graphicx}
+\usepackage{paralist}
+\usepackage{amsmath}
+\usepackage{array}
+\usepackage{enumitem}
+\usepackage{wrapfig}
+\usepackage{titlesec}
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    urlcolor=blue,
+    pdfborder={0 0 0},
+}
+
+\newcommand{\xfilll}[2][1ex]{
+    \dimen0=#2\advance\dimen0 by #1
+\leaders\hrule height \dimen0 depth -#1\hfill}
+\titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}
+\renewcommand\labelitemi{\raisebox{0.4ex}{\tiny$\bullet$}}
+\renewcommand{\labelitemii}{$\cdot$}
+\addtolength{\topmargin}{-0.3in}
+
+
+\begin{document}
+\thispagestyle{empty}
+\iffalse
+\indent
+\includegraphics[width=25mm]{IIT_Bombay_logo.png}
+\begin{tabular}{l l l}
+    &\textbf{Anshuman Kumar} & \textbf{Aerospace Engineering} \\
+    &\textbf{UG Third Year(B.tech)} & \textbf{Indian Institute of Technology Bombay}\\
+    &\textbf{Male} & DOB: \textbf{12/11/1994}\\
+    &Email: \textbf{anshu266man@gmail.com} &  Phone No: \textbf{7208039102}\\
+\end{tabular}
+
+\vspace{15pt}
+\begin{tabular*}{1\textwidth}{@{\extracolsep{\fill} } l | l l l  l }
+    \hline 
+    \textbf{Examination} & \textbf {Institute} & \textbf Exam & \textbf {Year} & \textbf {CPI/\%} \\
+    \hline 
+    Graduation & IIT Bombay & IIT Bomaby &2015 & 7.71 \\
+    Intermediate & Creane Memoriol School & CBSE &2012 &91.8\\
+    Matriculate & D.A.V Public School & CBSE &2010 & 9.60\\
+    \hline 
+\end{tabular*}
+\fi
+
+\indent
+\section*{}
+\vspace{40pt}
+
+\textbf{Interests}: Autonomous Unmanned Systems, Embedded Systems,
+Computer Graphics, 
+Image Processing, \\Parallel Computing,
+Artifical Intelligence, Cryptography. 
+\indent
+\vspace{-13pt}
+\section*{Scholastic Achievements\xfilll[0pt]{0.5pt}}
+\vspace{-7pt}
+\begin{itemize}[itemsep = -0.75 mm, leftmargin=*]
+    \item Awarded \textbf{Institute Technical Person of the Year}, 2015
+        for outstanding performance in technical activities.
+    \item Awarded \textbf{Institute Technical Special Mention}, 2014 for
+        contributing to techinical activities in campus.
+    \item Certified as among \textbf{Top 1\%} (500 students) in India, to appear for the  National Science Olympiad.
+    \end{itemize}
+    \vspace{-17pt}
+
+
+    \section*{Internships\xfilll[0pt]{0.5pt}}
+    \vspace{-7pt}
+    \textbf{Klugtek Robotics} \hfill{\sl \small Summer 2015}\\
+    \vspace{-17pt}
+    \begin{itemize}[itemsep = -0.75 mm, leftmargin=*]
+        \item Designed a two wheeled robot software architecture which can be easily ported to any embeded architecture.
+           
+        \item Implemented \textbf{Kalman Filter for Sensor Fusion}  of encoder and Imu.
+        \item Designed a \textbf{synchronous bluetooth protocol} for communication of robot and smart devices.
+        \item Implemented the client library in C++ and interfaced it to java using \textbf{JNI}.
+    \item Embeded programming in \textbf{ARM using CMSIS, HAL} and mbed.
+        \item Implemented \textbf{pure pursuit algorithm} for path tracking of robot.
+        \item Implemented Industrial level \textbf{PID controller} for controlling the robot. 
+    \end{itemize}
+    \vspace{1pt}
+\textbf{National Institute of Oceanography, Goa} \hfill{\sl \small Summer 2014}\\
+    \emph{Modules for Autonomous Underwater vehicle Maya}\hfill{\sl \small Guide: Pramod Kumar Maurya, Senior Scientist}\\
+    \vspace{-17pt}
+    \begin{itemize}[itemsep = -0.75 mm, leftmargin=*]
+        \item Designed the \textbf{software architecture} over Beaglebone for navigation of Maya. 
+        \item Developed modules in Robot Operating system for controlling the autonomous vehicle using \textbf{state space model}.
+        \item Implemented  \textbf{Socket communication}, for sending and receiving data between main computer and subsystems.
+        \item Developed the drivers for integrating \textbf{IMU and GPS}.
+    \end{itemize}
+    \
+    \vspace{-17pt}
+    \section*{Major Projects\xfilll[0pt]{0.5pt}}
+    \vspace{-7pt}
+
+    \textbf{Matsya, Autonomous Underwater Vehicle(AUV)} \hfill{\sl \small 2012 - Present}\\
+    \emph{International Robosub, AUVSI \& US Office of Naval Research} \hfill{\sl \small Guide: Prof. Leena Vachanni}\\
+    AUV-IITB is an all student team working on the design and development of an AUV Matsya which competes annually at the International AUVSI Robosub competition in San Diego, California.
+    \vspace{-5pt}
+    \begin{itemize}[itemsep = -0.75 mm, leftmargin=*]
+        \item \textbf{Software Lead}, 2014
+            \vspace{-5pt}
+            \begin{itemize}[itemsep = -0.75 mm, leftmargin=*]
+                \item Developed a two way \textbf{multi-threaded} communication protocol using \textbf{pthread} and sockets library.
+                \item Designed a modular architecture to integrate Doppler Velocity Log (DVL) for navigation of the system.
+                \item Implemented Navigaor of  the system using  \textbf{State Machine} using smach library.
+                \item Designed and implemented the \textbf{PID controller} for controlling the five DOF of the AUV.
+                \item Implemeted the map and mission planner for completing various task in a planned way.
+                \item Developed the firmware in \textbf{beaglebone} for controlling the electronics part.
+            \end{itemize}
+            \vspace{0pt}
+        \item \textbf{Chief Mechanical Designer}
+            \vspace{-5pt}
+            \begin{itemize}[itemsep = -0.75 mm, leftmargin=*]
+                \item Fully Designed and Developed Underwater Technologies such as Underwater Connectors and Underwater kill switch that are about 95\% cheaper than commercial products.
+                \item  Experimented and Developed various water-proofing techniques for Underwater Hulls which are really fast and reliable in assembly and dis-assembly of the system.
+            \end{itemize}
+            \textbf{Semi-Finalist} at Robosub 2012, 2013 \& 2014
+    \end{itemize}
+            \vspace{10pt}
+\textbf{Voice Controlled Surveillance Bot} \hfill{\sl \small Summer 2013}\vspace{-5pt}
+    \begin{itemize}[itemsep = -0.75 mm, leftmargin=*]
+        \item Designed and fabricated a Voice Controlled Surveillance Bot which is capable of capturing videos and sending to host computer using X bee.
+        \item Developed \textbf{algorithm from scratch} for comparing saved sound and currently recorded sound using Matlab.
+    \end{itemize}
+
+    \vspace{-17pt}
+
+
+    \section*{Self Motivated Project \xfilll[0pt]{0.5pt}}
+    \vspace{-5pt}
+    \textbf{Moodle Sync }  \hfill{\sl \small Autumn 2015}\\
+    \vspace{-17pt}
+    \begin{itemize}[itemsep = -0.75 mm, leftmargin=*]
+        \item Developed an terminal based application that automatically downloads all the lecture slides from moodle.
+        \item Implemented it for \textbf{multiple platform} using python.
+    \end{itemize}
+    \textbf{Terminal Snake } \hfill{\sl \small Autumn 2014}\\
+    \vspace{-17pt}
+    \begin{itemize}[itemsep = -0.75 mm, leftmargin=*]
+        \item Developed Terminal implementation of one of the most popular game Snake using Ncurses Libraries.
+        \item Implemented the different difficulty level.
+    \end{itemize}
+    \textbf{Connect Four }  \hfill{\sl \small Autumn 2013}\\
+    \vspace{-17pt}
+    \begin{itemize}[itemsep = -0.75 mm, leftmargin=*]
+        \item Developed an \textbf{algorithm from scratch}  for human vs CPU version of the game.
+        \item Implemented a Deterministic Algorithm for playing against human.
+        \item Also implemented different levels and  two player mode.
+    \end{itemize}
+    \vspace{-18pt}
+    \thispagestyle{empty}
+
+
+    \section*{Seminars \& Other Projects\xfilll[0pt]{0.5pt}}
+    \vspace{-7pt}
+    \begin{itemize}[itemsep = -0.75 mm, leftmargin=*]
+        \item Designed the Website (www.auv-iitb.org) using Bootstrap, Java-script, HTML, PHP, CSS.
+        \item Successfully Designed and Fabricated the Hydronoid gripper, Line follower and Remote control Torpedo shooter for Institute level competition.
+
+        \item Successfully designed a remote controlled highly stable motorized ground vehicle using RF transceivers. Secured second rank out of 200 team
+            participated.
+        \item Authored and presented Poster titled “Design and Analysis of an Autonomous Underwater Vehicle Matsya 2.0” which secured second position all over India at International Underwater Technology Workshop'13 at National Institute of Ocean Technology (NIOT), Chennai.
+    \end{itemize}
+    \vspace{-18pt}
+
+
+    \section*{Positions of Responsibility\xfilll[0pt]{0.5pt}}
+    \textbf{Mentor( Student’s Technical Activities Body- IIT Bombay )}
+    \vspace{-5pt}
+    \begin{itemize}[itemsep = -0.75 mm, leftmargin=*]
+        \item Mentored 2 teams for technical summer projects under Student Technical Activity Body(STAB). \\
+    \end{itemize}
+
+    \vspace{-18pt}
+
+
+    \section*{Extracurricular Activities\xfilll[0pt]{0.5pt}}
+    \vspace{-7pt}
+    \begin{itemize}[itemsep = -0.75 mm, leftmargin=*]
+        \item Participated and cleared 4 round in institute level chess competition.
+        \item Participated in some Institute level painting competition.
+
+
+
+    \end{itemize}
+    \vspace{-1pt}
+    \end{document}      
